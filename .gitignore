@@ -4,15 +4,12 @@ extra resoursec
 
 echo "# Compiled executables (NEVER commit these!)
 *.exe
-*.dll
 *.o
 *.obj
 
 # IDE settings
 .vscode/
 
-# The ENTIRE Raylib library (this is why your push is failing - it's huge!)
-RAYLIB/
 
 # Local save data
 savefile.dat
