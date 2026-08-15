@@ -20,3 +20,5 @@ savefile.dat
 # Keep source code, ignore the compiled files inside any folders
 extra resoursec/*.exe
 sprites/*.exe" > .gitignore
+
+READ.txt
