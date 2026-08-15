@@ -2,13 +2,11 @@
 extra resoursec
 
 
-echo "# Compiled executables (NEVER commit these!)
+echo "# Compiled executables
 *.exe
 *.o
 *.obj
 
-# IDE settings
-.vscode/
 
 
 # Local save data

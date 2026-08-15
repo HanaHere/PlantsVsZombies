@@ -1,0 +1,49 @@
+//THE BUILDER
+
+{
+
+
+
+    //JSON stands for JavaScript Object Notation.
+    //JSON is a lightweight format for storing and transporting data.
+
+
+    //Purpose: It tells VS Code how to compile your code.
+
+
+
+
+
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build Raylib",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "main.c",
+                "utils.c",
+                "Zombies.c",
+                "play_screen.c",
+                "Game.c",
+                "shop_screen.c",
+                "GameLevelsDATA.c",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe",
+                "-I./RAYLIB/include",
+                "-L./RAYLIB/lib",
+                "-lraylibdll",
+                "-lopengl32",
+                "-lgdi32",
+                "-lwinmm",
+                "-static-libgcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"],
+            "detail": "compiler: gcc"
+        }
+    ]
+}
